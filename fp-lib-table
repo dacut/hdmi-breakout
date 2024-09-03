@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "HDMI Breakout")(type "KiCad")(uri "${KIPRJMOD}/HDMI Breakout.pretty")(options "")(descr ""))
+)

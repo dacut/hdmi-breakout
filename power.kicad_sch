@@ -1692,7 +1692,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1856484"
+		(property "JLCPCB" "C346216"
 			(at 90.17 102.108 0)
 			(show_name yes)
 			(effects
@@ -2535,7 +2535,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1856484"
+		(property "JLCPCB" "C346216"
 			(at 247.904 91.44 0)
 			(show_name yes)
 			(effects
@@ -2820,7 +2820,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1856484"
+		(property "JLCPCB" "C346216"
 			(at 247.142 44.45 0)
 			(show_name yes)
 			(effects
@@ -2907,7 +2907,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1856484"
+		(property "JLCPCB" "C346216"
 			(at 93.98 52.578 0)
 			(show_name yes)
 			(effects

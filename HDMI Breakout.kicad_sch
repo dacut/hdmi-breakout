@@ -2461,12 +2461,6 @@
 		(uuid "3bbfe26a-a33a-4e67-a9fd-32270e79ef09")
 	)
 	(junction
-		(at 161.29 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40c1c82b-1f93-499e-9ac5-4622a50d27d1")
-	)
-	(junction
 		(at 340.36 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2531,6 +2525,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71d2bcd5-3395-4c9a-b348-30652bc31d58")
+	)
+	(junction
+		(at 161.29 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71f3e2d7-2650-410d-8dd3-ceacc42159ec")
 	)
 	(junction
 		(at 392.43 36.83)
@@ -3004,6 +3004,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 151.13) (xy 161.29 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee0948e-4193-4f30-a3bc-7b9128af1a7d")
+	)
+	(wire
+		(pts
 			(xy 171.45 128.27) (xy 189.23 128.27)
 		)
 		(stroke
@@ -3064,7 +3074,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 151.13) (xy 189.23 151.13)
+			(xy 187.96 151.13) (xy 189.23 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3144,7 +3154,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 151.13) (xy 161.29 161.29)
+			(xy 161.29 85.09) (xy 161.29 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3434,6 +3444,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 151.13) (xy 180.34 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7384665d-0114-435a-9383-73411f33e6a9")
+	)
+	(wire
+		(pts
 			(xy 149.86 158.75) (xy 149.86 161.29)
 		)
 		(stroke
@@ -3501,16 +3521,6 @@
 			(type default)
 		)
 		(uuid "7b13e863-24da-4c9c-97e4-a385ad338334")
-	)
-	(wire
-		(pts
-			(xy 161.29 151.13) (xy 173.99 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f1f8ce0-a5e4-4afe-b4ed-91551b3c3287")
 	)
 	(wire
 		(pts
@@ -4044,6 +4054,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 151.13) (xy 166.37 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db51b340-066d-4c97-ac2d-74304db60546")
+	)
+	(wire
+		(pts
 			(xy 36.83 144.78) (xy 36.83 146.05)
 		)
 		(stroke
@@ -4051,16 +4071,6 @@
 			(type default)
 		)
 		(uuid "e2c84dfb-99d3-40d4-ad44-5d22b1f381e5")
-	)
-	(wire
-		(pts
-			(xy 161.29 85.09) (xy 161.29 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6640290-392b-4517-8c3d-0a8163e4237f")
 	)
 	(wire
 		(pts
@@ -6017,6 +6027,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 170.18 151.13 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5eed56ce-ed9b-4447-b852-1b9e35bc35b0")
+		(property "Reference" "R19"
+			(at 170.18 148.336 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "80.6 1%"
+			(at 170.18 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 170.434 150.114 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 170.18 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" ""
+			(at 170.434 156.718 90)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JCBPCB" ""
+			(at 170.18 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae87c1f3-0df0-4301-90cb-665c98541f83")
+		)
+		(pin "2"
+			(uuid "65ec8875-ab43-4e0e-bbc9-b601870fa7fd")
+		)
+		(instances
+			(project "HDMI Breakout"
+				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 378.46 30.48 0)
 		(unit 1)
@@ -6812,7 +6907,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1856484"
+		(property "JLCPCB" "C346216"
 			(at 406.4 39.37 0)
 			(show_name yes)
 			(effects
@@ -6847,7 +6942,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 177.8 151.13 90)
+		(at 184.15 151.13 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6855,15 +6950,15 @@
 		(dnp no)
 		(uuid "b23a1b26-66b4-4022-9008-4e43b950e965")
 		(property "Reference" "R1"
-			(at 177.8 148.336 90)
+			(at 184.15 148.336 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "7.06k 1%"
-			(at 177.8 153.67 90)
+		(property "Value" "6.98k 1%"
+			(at 184.15 153.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6871,7 +6966,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 178.054 150.114 90)
+			(at 184.404 150.114 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6880,7 +6975,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 151.13 0)
+			(at 184.15 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6889,7 +6984,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 177.8 151.13 0)
+			(at 184.15 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6897,8 +6992,8 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2500653"
-			(at 178.054 156.718 90)
+		(property "JLCPCB" "C4345381"
+			(at 184.404 156.718 90)
 			(show_name yes)
 			(effects
 				(font
@@ -6907,7 +7002,7 @@
 			)
 		)
 		(property "JCBPCB" ""
-			(at 177.8 151.13 0)
+			(at 184.15 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7748,7 +7843,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1856484"
+		(property "JLCPCB" "C346216"
 			(at 354.33 57.658 0)
 			(show_name yes)
 			(effects

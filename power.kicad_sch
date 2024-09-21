@@ -141,51 +141,28 @@
 				)
 			)
 		)
-		(symbol "Diodes:AP2114HA-1.2TRG1"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "HDMI Breakout:AMS1117-1.2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 27.94 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "AP2114HA-1.2TRG1"
-				(at 27.94 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "SOT-223_DIO"
-				(at 0 0 0)
+				(at 3.302 4.318 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "AP2114HA-1.2TRG1"
-				(at 0 0 0)
+			(property "Value" "AMS1117-1.2"
+				(at 9.144 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+				(at 14.986 8.636 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -193,16 +170,8 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "AP2114HA-1.2TRG1"
-				(at 0 0 0)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409141623_UMW-Youtai-Semiconductor-Co---Ltd--AMS1117-1-2_C347218.pdf"
+				(at 10.16 10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -210,8 +179,8 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT-223_DIO SOT-223_DIO-M SOT-223_DIO-L"
-				(at 0 0 0)
+			(property "Description" "1.2V 1A LDO Voltage Regulator"
+				(at 15.24 6.604 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -219,59 +188,42 @@
 					(hide yes)
 				)
 			)
-			(symbol "AP2114HA-1.2TRG1_0_1"
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 48.26 -7.62)
+			(property "JLCPCB" "C347218"
+				(at 10.668 -5.334 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+				)
+			)
+			(property "Manufacturer" "UMW(Youtai Semiconductor Co., Ltd.)"
+				(at 14.478 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AMS1117-1.2_0_1"
+				(rectangle
+					(start 2.54 1.524)
+					(end 19.05 -4.064)
 					(stroke
-						(width 0.127)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 48.26 -7.62) (xy 48.26 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 48.26 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin input line
-					(at 0 0 0)
-					(length 7.62)
-					(name "VIN"
+			)
+			(symbol "AMS1117-1.2_1_1"
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "ADJ/GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -286,10 +238,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "GND"
+				(pin output line
+					(at 21.59 0 180)
+					(length 2.54)
+					(name "VOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -304,10 +256,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 55.88 -2.54 180)
-					(length 7.62)
-					(name "VOUT"
+				(pin power_in line
+					(at 0 0 0)
+					(length 2.54)
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -322,10 +274,163 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 55.88 0 180)
-					(length 7.62)
-					(name "EPAD"
+				(pin passive line
+					(at 21.59 -2.54 180)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "HDMI Breakout:AMS1117-3.3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 3.302 4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AMS1117-3.3"
+				(at 9.144 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+				(at 14.986 8.636 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409141623_UMW-Youtai-Semiconductor-Co---Ltd--AMS1117-3-3_C347222.pdf"
+				(at 10.16 10.414 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "3.3V 1A LDO Voltage Regulator"
+				(at 15.24 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "JLCPCB" "C347222"
+				(at 10.668 -5.334 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UMW(Youtai Semiconductor Co., Ltd.)"
+				(at 9.652 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AMS1117-3.3_0_1"
+				(rectangle
+					(start 2.54 1.524)
+					(end 19.05 -4.064)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AMS1117-3.3_1_1"
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "ADJ/GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 21.59 0 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 21.59 -2.54 180)
+					(length 2.54)
+					(name "PAD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -908,7 +1013,13 @@
 		(uuid "56aed521-f72b-46e1-9ce4-592faf08dc61")
 	)
 	(junction
-		(at 181.61 93.98)
+		(at 160.02 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84eec0b8-c998-42f4-baa5-c30e35b6d0b9")
+	)
+	(junction
+		(at 163.83 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90fbbe99-9900-419a-9645-077ec8b1e76a")
@@ -1039,7 +1150,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 93.98) (xy 187.96 87.63)
+			(xy 170.18 91.44) (xy 170.18 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1059,6 +1170,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 44.45) (xy 166.37 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13afb9d2-46df-4ab2-b774-9d4878bfc098")
+	)
+	(wire
+		(pts
 			(xy 78.74 46.99) (xy 78.74 49.53)
 		)
 		(stroke
@@ -1069,23 +1190,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 41.91) (xy 115.57 41.91)
+			(xy 128.27 41.91) (xy 128.27 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2004d456-7b85-43df-9d66-bf2cceb8ff01")
-	)
-	(wire
-		(pts
-			(xy 121.92 44.45) (xy 115.57 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23ae37e9-e7b8-4500-9aef-09c9514ab1d6")
+		(uuid "1f31d9ad-5173-42a2-abab-74b454face6d")
 	)
 	(wire
 		(pts
@@ -1109,7 +1220,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 91.44) (xy 115.57 87.63)
+			(xy 132.08 91.44) (xy 132.08 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1119,13 +1230,33 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 93.98) (xy 181.61 93.98)
+			(xy 160.02 41.91) (xy 166.37 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e0da220-eb62-4fe2-84d7-3032e8ff653e")
+	)
+	(wire
+		(pts
+			(xy 160.02 91.44) (xy 163.83 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "430ab4f4-aa51-4997-9019-32db6911b7fb")
+	)
+	(wire
+		(pts
+			(xy 128.27 41.91) (xy 134.62 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45340c8d-e458-4503-af14-9ed7a20c8292")
 	)
 	(wire
 		(pts
@@ -1139,6 +1270,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 93.98) (xy 170.18 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c3a2459-a486-410f-a92c-d65dfd1774f0")
+	)
+	(wire
+		(pts
 			(xy 213.36 85.09) (xy 228.6 85.09)
 		)
 		(stroke
@@ -1149,13 +1290,13 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 91.44) (xy 179.07 97.79)
+			(xy 156.21 41.91) (xy 160.02 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59e4f75c-c6e7-4a13-8545-f50153f541bd")
+		(uuid "57b723ac-83dc-4159-a6bd-229f6dc64626")
 	)
 	(wire
 		(pts
@@ -1209,7 +1350,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 93.98) (xy 187.96 93.98)
+			(xy 163.83 91.44) (xy 170.18 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1219,7 +1360,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 93.98) (xy 115.57 93.98)
+			(xy 138.43 93.98) (xy 132.08 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1239,16 +1380,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 91.44) (xy 115.57 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7272d29e-368e-4cb3-910c-06121ffa9e68")
-	)
-	(wire
-		(pts
 			(xy 62.23 86.36) (xy 76.2 86.36)
 		)
 		(stroke
@@ -1259,13 +1390,33 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 93.98) (xy 115.57 97.79)
+			(xy 134.62 44.45) (xy 128.27 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7931f247-0e83-4363-a0b0-2097fdfcca61")
+	)
+	(wire
+		(pts
+			(xy 132.08 93.98) (xy 132.08 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7ebc65a7-8d12-43be-9f97-8d5135879706")
+	)
+	(wire
+		(pts
+			(xy 166.37 41.91) (xy 166.37 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f3c3c4c-af6d-4aa1-ae1f-d30abe83cb6d")
 	)
 	(wire
 		(pts
@@ -1276,16 +1427,6 @@
 			(type default)
 		)
 		(uuid "85ae94ee-4d5f-4be1-a100-4bfa3574ea8a")
-	)
-	(wire
-		(pts
-			(xy 177.8 91.44) (xy 179.07 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89164d74-86d2-4940-a99f-57b3654358c5")
 	)
 	(wire
 		(pts
@@ -1339,16 +1480,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 41.91) (xy 115.57 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2a001c3-6466-4efe-864e-9b5285f9162a")
-	)
-	(wire
-		(pts
 			(xy 213.36 38.1) (xy 228.6 38.1)
 		)
 		(stroke
@@ -1386,6 +1517,26 @@
 			(type default)
 		)
 		(uuid "acd9332a-a82d-44ee-a920-fdc79f25f079")
+	)
+	(wire
+		(pts
+			(xy 132.08 91.44) (xy 138.43 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae5edba8-524c-4514-a93b-c41d99ce83c1")
+	)
+	(wire
+		(pts
+			(xy 128.27 44.45) (xy 128.27 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5bb0bf9-89b9-4e4e-8dc1-90eee03d02af")
 	)
 	(wire
 		(pts
@@ -1469,16 +1620,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 44.45) (xy 115.57 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd32fa82-f45e-411e-800a-e6c25bcf2aa4")
-	)
-	(wire
-		(pts
 			(xy 78.74 34.29) (xy 78.74 36.83)
 		)
 		(stroke
@@ -1507,9 +1648,31 @@
 		)
 		(uuid "fac31326-64fa-49ea-ba98-aab5b190911e")
 	)
+	(label "PAD_1V2"
+		(at 157.48 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f4703a4-4d29-466f-b68c-5396cf23d6f3")
+	)
+	(label "PAD_3V3"
+		(at 161.29 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ebaff56-7885-4be7-b104-dee05a99fa5e")
+	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 187.96 87.63 0)
+		(at 170.18 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1518,7 +1681,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ebedaa8-c083-4d7a-b0e1-2d03edf0ffc9")
 		(property "Reference" "#PWR027"
-			(at 187.96 91.44 0)
+			(at 170.18 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1527,7 +1690,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 187.96 82.55 0)
+			(at 170.18 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1535,7 +1698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 87.63 0)
+			(at 170.18 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1544,7 +1707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 87.63 0)
+			(at 170.18 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1553,7 +1716,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 187.96 87.63 0)
+			(at 170.18 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1692,7 +1855,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C346216"
+		(property "JLCPCB" "C5189822"
 			(at 90.17 102.108 0)
 			(show_name yes)
 			(effects
@@ -1720,72 +1883,6 @@
 			(project "HDMI Breakout"
 				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
 					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 115.57 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24f5b72e-c610-46cf-8005-09b7bca20676")
-		(property "Reference" "#PWR015"
-			(at 115.57 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 115.57 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 115.57 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6bd98258-3a1e-4981-9970-f966fafc4c12")
-		)
-		(instances
-			(project "HDMI Breakout"
-				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
-					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -1858,52 +1955,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Diodes:AP2114HA-1.2TRG1")
-		(at 121.92 41.91 0)
+		(lib_id "power:GND")
+		(at 128.27 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "353f0dac-cbbf-488d-94f8-164962504e69")
-		(property "Reference" "U4"
-			(at 149.86 31.75 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "AP2114HA-1.2TRG1"
-			(at 149.86 34.29 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
-			(at 121.92 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "AP2114HA-1.2TRG1"
-			(at 121.92 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 121.92 41.91 0)
+		(uuid "2b410f57-4988-46d2-9abb-96919dae2bdb")
+		(property "Reference" "#PWR066"
+			(at 128.27 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1911,17 +1972,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C3751555"
-			(at 149.352 38.354 0)
-			(show_name yes)
+		(property "Value" "GND"
+			(at 128.27 53.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "JCBPCB" ""
-			(at 121.92 41.91 0)
+		(property "Footprint" ""
+			(at 128.27 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1929,22 +1989,31 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "bd4fc817-4178-44a6-91fd-2bf4d40beba4")
+		(property "Datasheet" ""
+			(at 128.27 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "9590098b-b847-4b9a-a721-650fc8b24107")
-		)
-		(pin "3"
-			(uuid "2e2913d1-c0ca-47bb-8f54-7a55decd7aec")
-		)
-		(pin "2"
-			(uuid "50d36715-dfd9-42af-8558-af99c985d665")
+			(uuid "05367cda-6719-4ddc-9150-0bcb537465e0")
 		)
 		(instances
 			(project "HDMI Breakout"
 				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
-					(reference "U4")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -2070,7 +2139,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1853272"
+		(property "JLCPCB" "C1525"
 			(at 200.66 91.44 0)
 			(show_name yes)
 			(effects
@@ -2104,8 +2173,100 @@
 		)
 	)
 	(symbol
+		(lib_id "HDMI Breakout:AMS1117-1.2")
+		(at 134.62 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65d577bf-a999-4bbe-a637-5ad6a031fcab")
+		(property "Reference" "U4"
+			(at 145.415 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-1.2"
+			(at 145.415 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+			(at 149.606 33.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409141623_UMW-Youtai-Semiconductor-Co---Ltd--AMS1117-1-2_C347218.pdf"
+			(at 144.78 31.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1.2V 1A LDO Voltage Regulator"
+			(at 149.86 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C347218"
+			(at 145.415 38.1 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UMW(Youtai Semiconductor Co., Ltd.)"
+			(at 149.098 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fcfdd414-38d0-4b5a-aa8b-72bc6d132032")
+		)
+		(pin "3"
+			(uuid "f4300b59-16c3-4f30-8590-d504e005fbdd")
+		)
+		(pin "4"
+			(uuid "5cd42745-e8aa-466e-8918-a477f92865a1")
+		)
+		(pin "1"
+			(uuid "a4f982ed-1d62-4b18-b763-b13fadac4da8")
+		)
+		(instances
+			(project ""
+				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 181.61 93.98 0)
+		(at 163.83 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2114,7 +2275,7 @@
 		(fields_autoplaced yes)
 		(uuid "720b8d50-f78a-4979-81bd-acf0c2df7f41")
 		(property "Reference" "#FLG02"
-			(at 181.61 92.075 0)
+			(at 163.83 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2123,7 +2284,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 181.61 88.9 0)
+			(at 163.83 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2131,7 +2292,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 93.98 0)
+			(at 163.83 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2140,7 +2301,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 93.98 0)
+			(at 163.83 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2149,7 +2310,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 181.61 93.98 0)
+			(at 163.83 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2164,99 +2325,6 @@
 			(project "HDMI Breakout"
 				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diodes:AP2114HA-1.2TRG1")
-		(at 121.92 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "764e11d7-5bae-4144-8449-1df5d0783c7a")
-		(property "Reference" "U5"
-			(at 149.86 81.28 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "AP2114HA-3.3TRG1"
-			(at 149.86 83.82 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
-			(at 121.92 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "AP2114HA-3.3TRG1"
-			(at 121.92 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 121.92 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C460314"
-			(at 149.352 87.884 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JCBPCB" ""
-			(at 121.92 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "6e373786-6b44-4eff-98b8-30c4c675bc7d")
-		)
-		(pin "1"
-			(uuid "87a11d50-39ad-4c9b-befd-427f67aebf41")
-		)
-		(pin "3"
-			(uuid "0e36d067-d69d-46ef-a509-50e78d85dd83")
-		)
-		(pin "2"
-			(uuid "addd107d-cb45-4af4-a582-8ae337ae20c6")
-		)
-		(instances
-			(project "HDMI Breakout"
-				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
-					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -2316,7 +2384,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1853272"
+		(property "JLCPCB" "C1525"
 			(at 66.04 43.18 0)
 			(show_name yes)
 			(effects
@@ -2535,7 +2603,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C346216"
+		(property "JLCPCB" "C5189822"
 			(at 247.904 91.44 0)
 			(show_name yes)
 			(effects
@@ -2820,7 +2888,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C346216"
+		(property "JLCPCB" "C5189822"
 			(at 247.142 44.45 0)
 			(show_name yes)
 			(effects
@@ -2848,6 +2916,98 @@
 			(project "HDMI Breakout"
 				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HDMI Breakout:AMS1117-3.3")
+		(at 138.43 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcd33e84-63d7-4010-b812-cea9813745c5")
+		(property "Reference" "U5"
+			(at 149.225 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-3.3"
+			(at 149.225 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
+			(at 153.416 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409141623_UMW-Youtai-Semiconductor-Co---Ltd--AMS1117-3-3_C347222.pdf"
+			(at 148.59 81.026 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.3V 1A LDO Voltage Regulator"
+			(at 153.67 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C347222"
+			(at 149.225 87.63 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UMW(Youtai Semiconductor Co., Ltd.)"
+			(at 148.082 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "7dcb6748-a0f6-49d9-9720-30332e7dd5c4")
+		)
+		(pin "3"
+			(uuid "8cb18509-2567-4b6e-a523-67707c34cc4d")
+		)
+		(pin "2"
+			(uuid "5e66e4a9-134c-480d-a36c-aa49cfba0722")
+		)
+		(pin "1"
+			(uuid "a58c1f35-92b0-46f1-b4b9-dc48148fbae6")
+		)
+		(instances
+			(project ""
+				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -2907,7 +3067,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C346216"
+		(property "JLCPCB" "C5189822"
 			(at 93.98 52.578 0)
 			(show_name yes)
 			(effects
@@ -2942,7 +3102,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 97.79 0)
+		(at 132.08 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2950,7 +3110,7 @@
 		(dnp no)
 		(uuid "c0937626-51d5-495e-a857-10aa587d928e")
 		(property "Reference" "#PWR028"
-			(at 115.57 104.14 0)
+			(at 132.08 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2959,7 +3119,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 103.124 0)
+			(at 132.08 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2967,7 +3127,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 97.79 0)
+			(at 132.08 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2976,7 +3136,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 97.79 0)
+			(at 132.08 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2985,7 +3145,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 97.79 0)
+			(at 132.08 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3007,7 +3167,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 115.57 87.63 0)
+		(at 132.08 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3016,7 +3176,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2e1814b-8beb-4e6d-bbd7-fd02b6b0ab29")
 		(property "Reference" "#PWR026"
-			(at 115.57 91.44 0)
+			(at 132.08 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +3185,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 115.57 82.55 0)
+			(at 132.08 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3033,7 +3193,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 87.63 0)
+			(at 132.08 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3042,7 +3202,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 87.63 0)
+			(at 132.08 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3051,7 +3211,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 115.57 87.63 0)
+			(at 132.08 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3125,7 +3285,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1853272"
+		(property "JLCPCB" "C1525"
 			(at 76.2 84.328 0)
 			(show_name yes)
 			(effects
@@ -3159,16 +3319,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 115.57 48.26 0)
+		(lib_id "power:PWR_FLAG")
+		(at 160.02 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c5ff0bf9-7a2a-422d-ae5e-f5bb5ff17394")
-		(property "Reference" "#PWR017"
-			(at 115.57 54.61 0)
+		(fields_autoplaced yes)
+		(uuid "d4b7d1bd-1fe7-4a96-85ae-3e7be6b4807f")
+		(property "Reference" "#FLG05"
+			(at 160.02 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,8 +3337,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 115.57 53.594 0)
+		(property "Value" "PWR_FLAG"
+			(at 160.02 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3185,7 +3346,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 48.26 0)
+			(at 160.02 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3193,8 +3354,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 115.57 48.26 0)
+		(property "Datasheet" "~"
+			(at 160.02 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3202,8 +3363,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 48.26 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 160.02 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3212,12 +3373,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b7cf2f77-672f-4055-a69f-7eb7e3690dc0")
+			(uuid "8a17659f-ee86-455a-b1fa-d20fef461c34")
 		)
 		(instances
 			(project "HDMI Breakout"
 				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
-					(reference "#PWR017")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -3277,7 +3438,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1853272"
+		(property "JLCPCB" "C1525"
 			(at 200.66 44.45 0)
 			(show_name yes)
 			(effects
@@ -3364,7 +3525,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1853272"
+		(property "JLCPCB" "C1525"
 			(at 49.53 92.71 0)
 			(show_name yes)
 			(effects
@@ -3392,6 +3553,72 @@
 			(project "HDMI Breakout"
 				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 128.27 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df667103-dee6-4f10-b1fd-888579db438b")
+		(property "Reference" "#PWR032"
+			(at 128.27 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 128.27 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 128.27 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a9ed7d9-8b7c-4f1b-8770-d529f4468e0b")
+		)
+		(instances
+			(project "HDMI Breakout"
+				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -3464,6 +3691,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 166.37 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9073930-52da-4d30-a051-1daf685723c2")
+		(property "Reference" "#PWR065"
+			(at 166.37 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V2"
+			(at 166.37 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 166.37 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e60bbc58-6725-4fd6-a2ff-b1a3370848af")
+		)
+		(instances
+			(project "HDMI Breakout"
+				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 78.74 34.29 0)
 		(unit 1)
@@ -3524,71 +3817,6 @@
 			(project "HDMI Breakout"
 				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 179.07 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f2c61f4b-7ff0-4d44-948d-1b482208f69a")
-		(property "Reference" "#PWR032"
-			(at 179.07 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 179.07 103.124 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c37e58e6-3322-40d7-8b08-ff2307d4dab0")
-		)
-		(instances
-			(project "HDMI Breakout"
-				(path "/7e1b48bc-ae7f-4b09-a989-3d4d32e543f0/372947d5-3125-43f6-86f4-20464e5af5f4"
-					(reference "#PWR032")
 					(unit 1)
 				)
 			)

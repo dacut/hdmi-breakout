@@ -3,10 +3,7 @@ from os import listdir
 from os import rename
 
 REPLACEMENTS = {
-    "C346216": "C5189822",
-    "C2130243": "C43473",
-    "C2131941": "C427206",
-    "C4096848": "C25901",
+    "C1853272": "C1525",
 }
 
 
